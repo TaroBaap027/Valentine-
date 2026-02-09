@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tanishq ❤️ Nisha</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="card">
+    <h1>Nisha, will you be my Valentine? 💘</h1>
+    <div class="from">— from Tanishq</div>
+
+    <div class="btns">
+      <button id="yes" type="button">Yes 💖</button>
+    </div>
+
+    <div class="result" id="result"></div>
+    <div class="musicTip" id="musicTip">Tap anywhere once to start the music 🎶</div>
+
+    <section class="msgBox" id="msgBox" aria-hidden="true">
+      <label for="message">Message back to Tanishq 💌</label>
+      <textarea id="message" placeholder="Write something cute here..."></textarea>
+
+      <div class="sendRow">
+        <button id="copy" class="secondary" type="button">Copy message</button>
+        <button id="sendEmail" type="button">Send to Tanishq</button>
+      </div>
+
+      <div class="status" id="status"></div>
+      <div class="tiny" id="tiny">
+        If “Send” doesn’t open, use “Copy message” and paste it to Tanishq on WhatsApp/iMessage.
+      </div>
+    </section>
+  </main>
+
+  <!-- "No" exists but is impossible -->
+  <button id="no" type="button" aria-label="No">No 🙃</button>
+
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+  <!-- Background music (Gehra Hua) via YouTube embed -->
+  <div id="ytWrap" aria-hidden="true">
+    <iframe
+      id="ytPlayer"
+      width="1"
+      height="1"
+      src="https://www.youtube.com/embed/2kvtJL8Keog?autoplay=1&loop=1&playlist=2kvtJL8Keog&mute=1"
+      title="Gehra Hua"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
